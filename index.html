@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>ISTA Connect</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Logo_OFPPT.png" alt="Logo OFPPT">
+      <h1>ISTA Connect</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Cours</a></li>
+        <li><a href="#">Professeurs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Choisissez votre classe :</h2>
+    <div class="buttons">
+      <button onclick="showSchedule('DEV1')">DEV1</button>
+      <button onclick="showSchedule('DEV2')">DEV2</button>
+      <button onclick="showSchedule('DEV3')">DEV3</button>
+      <button onclick="showSchedule('GEST1')">GEST1</button>
+      <button onclick="showSchedule('GEST2')">GEST2</button>
+      <button onclick="showSchedule('INFO1')">INFO1</button>
+    </div>
+
+    <section id="schedule">
+      <h3>Emploi du temps</h3>
+      <table id="scheduleTable">
+        <thead>
+          <tr>
+            <th>Jour</th>
+            <th>Heure</th>
+            <th>Matière</th>
+            <th>Professeur</th>
+            <th>Salle</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 OFPPT | Développé par les stagiaires ISTA</p>
+  </footer>
+
+  <!-- ⚙️ رابط ملف JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
